@@ -1,11 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bundle & Save</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-   hello 
+
+  <div class="card">
+    <div class="title-row">
+      <span class="line"></span>
+      <h2>Bundle & Save</h2>
+      <span class="line"></span>
+    </div>
+
+    <div class="option active" data-price="195" data-id="1">
+      <label>
+        <input type="radio" name="pair" value="1" checked />
+        <div class="row">
+          <div>
+            1 Pair<br><strong>DKK 195.00</strong>
+          </div>
+          <div class="off-label">50% OFF</div>
+        </div>
+      </label>
+      <div class="dropdowns">
+        <div class="selectors header-row">
+          <span style="width: 30px;"></span>
+          <span style="flex:1;font-size: small;color: gray;">Size</span>
+          <span style="flex:1;font-size: small;color: gray;">Colour</span>
+        </div>
+        <div class="selectors">
+          <span style="width: 30px;">#1</span>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Colour</option><option>Black</option><option>White</option></select>
+        </div>
+        <div class="selectors">
+          <span style="width: 30px;">#2</span>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Colour</option><option>Black</option><option>White</option></select>
+        </div>
+      </div>
+    </div>
+
+    <div class="option" data-price="345" data-id="2">
+      <label>
+        <input type="radio" name="pair" value="2" />
+        <div class="row">
+          <div>
+            2 Pair<br><strong>DKK 345.00</strong>
+          </div>
+          <div class="off-label">40% OFF</div>
+        </div>
+        <div class="most-popular">Most Popular</div>
+      </label>
+      <div class="dropdowns">
+        <div class="selectors header-row">
+          <span style="width: 30px;"></span>
+          <span style="flex:1;font-size: small;color: gray;">Size</span>
+          <span style="flex:1;font-size: small;color: gray;">Colour</span>
+        </div>
+        <div class="selectors">
+          <span style="width: 30px;">#1</span>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Colour</option><option>Black</option><option>White</option></select>
+        </div>
+        <div class="selectors">
+          <span style="width: 30px;">#2</span>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Colour</option><option>Black</option><option>White</option></select>
+        </div>
+      </div>
+    </div>
+
+    <div class="option" data-price="528" data-id="3">
+      <label>
+        <input type="radio" name="pair" value="3" />
+        <div class="row">
+          <div>
+            3 Pair<br><strong>DKK 528.00</strong>
+          </div>
+          <div class="off-label">60% OFF</div>
+        </div>
+      </label>
+      <div class="dropdowns">
+        <div class="selectors header-row">
+          <span style="width: 30px;"></span>
+          <span style="flex:1;font-size: small;color: gray;">Size</span>
+          <span style="flex:1;font-size: small;color: gray;">Colour</span>
+        </div>
+        <div class="selectors">
+          <span style="width: 30px;">#1</span>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Colour</option><option>Black</option><option>White</option></select>
+        </div>
+        <div class="selectors">
+          <span style="width: 30px;">#2</span>
+          <select><option>S</option><option>M</option><option>L</option></select>
+          <select><option>Colour</option><option>Black</option><option>White</option></select>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="shipping">Free 2 Day Shipping</div>
+      <div class="total">Total: <span id="total">DKK 195.00</span></div>
+    </div>
+    <button class="btn">+ Add to Cart</button>
+    <div class="powered">© Powered by Pumper</div>
+  </div>
+
+  <script src="./index.js"></script>
 </body>
 </html>
